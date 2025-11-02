@@ -391,7 +391,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
               variants={scaleIn}
             >
               <p className="text-xl md:text-2xl font-light mb-6 text-center">
-                It all began on May 28, 2025, with a simple, traditional family gathering. From the very first moment, something just felt right. It wasn't loud or dramatic — just a warm, quiet feeling that made us both smile.
+                It all began on May 29, 2025, with a simple, traditional family gathering. From the very first moment, something just felt right. It wasn't loud or dramatic — just a warm, quiet feeling that made us both smile.
               </p>
               
               <p className="text-xl md:text-2xl font-light mb-6 text-center">
