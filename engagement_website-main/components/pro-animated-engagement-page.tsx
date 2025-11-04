@@ -366,45 +366,6 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
         </div>
       </motion.section>
 
-      {/* Section 4: Our Love Story */}
-      <motion.section 
-        className="relative py-16 px-4 md:py-20"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={fadeIn}
-      >
-        <div className="max-w-5xl mx-auto">
-          <div className="bg-white/40 backdrop-blur-md border border-white/30 rounded-3xl p-8 md:p-12 shadow-2xl">
-            <motion.div 
-              className="text-center mb-8"
-              variants={slideUp}
-            >
-              <div className="w-16 h-px bg-accent/30 mx-auto mb-6" />
-              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-gray-800 leading-tight mb-4">
-                Our Love Story
-              </h2>
-            </motion.div>
-
-            <motion.div 
-              className="prose prose-lg max-w-none text-gray-800 leading-relaxed"
-              variants={scaleIn}
-            >
-              <p className="text-xl md:text-2xl font-light mb-6 text-center">
-                It all began on May 29, 2025, with a simple, traditional family gathering. From the very first moment, something just felt right. It wasn't loud or dramatic — just a warm, quiet feeling that made us both smile.
-              </p>
-              
-              <p className="text-xl md:text-2xl font-light mb-6 text-center">
-                In just a few magical days, our bond grew so effortlessly and beautifully that we found ourselves choosing our rings together, sealing our love with an engagement on June 7, 2025.
-              </p>
-              
-              <p className="text-xl md:text-2xl font-light text-center">
-                But this was only the beginning of our fairytale. Our love kept growing, blooming brighter with every heartbeat… until we decided to make it forever and write our own "happily ever after" on November 14, 2025.
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
 
       {/* Section 5: Leave Us a Message */}
       <motion.section 
