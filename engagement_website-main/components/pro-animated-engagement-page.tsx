@@ -366,7 +366,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
         </div>
       </motion.section>
 
-      {/* Section 4: Our Love Story */}
+      {/* Section 4: Our Love Story
       <motion.section 
         className="relative py-16 px-4 md:py-20"
         initial="hidden"
@@ -404,7 +404,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
             </motion.div>
           </div>
         </div>
-      </motion.section>
+      </motion.section> */}
 
       {/* Section 5: Leave Us a Message */}
       <motion.section 
