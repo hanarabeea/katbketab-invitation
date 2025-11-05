@@ -30,7 +30,7 @@ export default function RSVPSection() {
     try {
       const formData = new FormData();
       formData.append('name', rsvpName.trim());
-      formData.append('to_email', 'hanarabeea707@gmail.com');
+      formData.append('to_email', 'nermenelkhamisy006@gmail.com');
       formData.append('message', 'RSVP Response');
       formData.append('message_type', 'rsvp');
       formData.append('rsvp_attending', rsvpAttending);

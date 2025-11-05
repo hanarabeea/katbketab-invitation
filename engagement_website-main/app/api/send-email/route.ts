@@ -14,7 +14,7 @@ export async function POST(request: Request) {
   try {
     const formData = await request.formData();
     const name = formData.get('name') as string;
-    const toEmail = formData.get('to_email') as string || 'hanarabeea707@gmail.com';
+    const toEmail = formData.get('to_email') as string || 'nermenelkhamisy006@gmail.com';
     const message = formData.get('message') as string;
     const messageType = formData.get('message_type') as string;
     const rsvpAttending = formData.get('rsvp_attending') as string;
@@ -47,10 +47,10 @@ export async function POST(request: Request) {
     // Build email content
     let emailContent = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-        <h2 style="color: #4f46e5; text-align: center;">💕 New Message from Your Engagement Website 💕</h2>
+        <h2 style="color: #4f46e5; text-align: center;">New Message from Your Engagement Website</h2>
         <div style="background: #f8fafc; padding: 20px; border-radius: 10px; margin: 20px 0;">
           <p><strong>From:</strong> ${name}</p>
-          <p><strong>Message Type:</strong> ${messageType === 'handwritten' ? '✍️ Handwritten' : '💬 Normal Message'}</p>
+          <p><strong>Message Type:</strong> ${messageType === 'handwritten' ? 'Handwritten' : 'Normal Message'}</p>
     `;
 
     // Add message content
@@ -74,8 +74,8 @@ export async function POST(request: Request) {
     if (rsvpAttending) {
       emailContent += `
         <div style="background: #fef3c7; padding: 15px; border-radius: 8px; margin: 20px 0;">
-          <h3 style="color: #92400e; margin: 0 0 10px 0;">🎉 RSVP Information</h3>
-          <p><strong>Attending:</strong> ${rsvpAttending === 'yes' ? '✅ Yes, I\'ll be there!' : '❌ Sorry, can\'t make it'}</p>
+          <h3 style="color: #92400e; margin: 0 0 10px 0;">RSVP Information</h3>
+          <p><strong>Attending:</strong> ${rsvpAttending === 'yes' ? 'Yes, I\'ll be there!' : 'Sorry, can\'t make it'}</p>
       `;
       
       if (rsvpAttending === 'yes' && rsvpName) {
@@ -92,7 +92,7 @@ export async function POST(request: Request) {
     emailContent += `
         </div>
         <p style="text-align: center; color: #6b7280; font-size: 14px;">
-          Sent from your beautiful engagement website! 💍
+          Sent from your beautiful engagement website!
         </p>
       </div>
     `;
@@ -101,7 +101,7 @@ export async function POST(request: Request) {
     const info = await transporter.sendMail({
       from: '"Engagement Website" <digitivaa@gmail.com>',
       to: toEmail,
-      subject: `💕 New Message from ${name} - Engagement Website`,
+      subject: `New Message from ${name} - Engagement Website`,
       html: emailContent,
       attachments
     });

@@ -198,7 +198,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
                         d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                       />
                     </svg>
-                    <span className="text-gray-800">November 14, 2025</span>
+                    <span className="text-gray-800 font-bold text-xl">November 14, 2025</span>
                   </div>
                   <div className="hidden md:block w-px h-6 bg-accent/20" />
                   <div className="flex items-center gap-3">
@@ -210,7 +210,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                       />
                     </svg>
-                    <span className="text-gray-800">5:00 PM</span>
+                    <span className="text-gray-800 font-bold text-xl text-accent drop-shadow-sm">4:00 PM</span>
                   </div>
                 </div>
               </div>
@@ -471,7 +471,7 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
           >
             We can't wait to celebrate with you
           </motion.p>
-          <div className="flex items-center justify-center gap-3">
+          <div className="flex items-center justify-center gap-3 mb-8">
             <div className="w-12 h-px bg-accent/30" />
             <motion.span 
               className="text-accent"
@@ -487,6 +487,38 @@ export default function ProAnimatedEngagementPage({ onImageLoad }: ProAnimatedEn
               </svg>
             </motion.span>
             <div className="w-12 h-px bg-accent/30" />
+          </div>
+          <div className="space-y-2">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-sm text-white/60 hover:text-white/80 transition-colors"
+            >
+              <a 
+                href="https://www.instagram.com/digitiva.co/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-1"
+              >
+                Designed with love by Digitiva
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="inline-block ml-1">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </motion.div>
+            <motion.p 
+              className="text-xs text-white/40 text-center"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              © {new Date().getFullYear()} All rights reserved
+            </motion.p>
           </div>
         </div>
       </motion.footer>
